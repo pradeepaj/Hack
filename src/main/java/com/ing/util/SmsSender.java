@@ -1,4 +1,4 @@
-package com.ing.service;
+package com.ing.util;
 
 import com.ing.dto.SmsRequest;
 

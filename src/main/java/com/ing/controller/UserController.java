@@ -16,8 +16,8 @@ import com.ing.dto.OtpResDTO;
 import com.ing.dto.RegisterReqDTO;
 import com.ing.dto.RegisterResDTO;
 import com.ing.dto.SmsRequest;
-import com.ing.service.SmsService;
 import com.ing.service.UserService;
+import com.ing.util.SmsService;
 
 @RestController
 @CrossOrigin(allowedHeaders = { "*", "*/" }, origins = { "*", "*/" })

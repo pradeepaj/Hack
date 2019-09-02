@@ -18,6 +18,7 @@ import com.ing.entity.User;
 import com.ing.exception.EnterValidCredentials;
 import com.ing.repository.AuthRepository;
 import com.ing.repository.UserRepository;
+import com.ing.util.TwilioSmsSender;
 
 @Service
 public class UserServiceImpl implements UserService {
