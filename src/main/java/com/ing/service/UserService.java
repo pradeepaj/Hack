@@ -7,9 +7,7 @@ import com.ing.dto.RegisterResDTO;
 
 public interface UserService {
 
-
 	OtpResDTO sendOtp(OtpReqDTO req);
-
 	RegisterResDTO authentication(RegisterReqDTO req);
-
+	public void generateOTPandSendMail(String email);
 }

@@ -8,5 +8,5 @@ import lombok.Setter;
 public class OtpReqDTO {
 	
 	private String phoneNumber;
-
+	private String email;
 }
