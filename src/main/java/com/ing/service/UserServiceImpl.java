@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public OtpResDTO sendOtp(OtpReqDTO req) {
 
-		Integer otp = null;
+		Integer otp;
 		Random rand = new Random();
 		otp = 1000 + rand.nextInt(9999);
 		String message = "OTP Verification : " + otp;
@@ -87,6 +87,7 @@ public class UserServiceImpl implements UserService {
 
 	}
 
+	@Override
 	public void generateOTPandSendMail(String email) {
 
 		logger.info("generateOTPandSendMail for mail id {} ", email);
@@ -97,7 +98,7 @@ public class UserServiceImpl implements UserService {
 			String subject = "ING Bank Transactions";
 			mailWithOTPService.sendEmail(email, subject, body);
 		} catch (Exception e) {
-			logger.info("Error in generating OTP ");
+			logger.info("Error in generating OTP {}",e);
 		}
 	}
 
